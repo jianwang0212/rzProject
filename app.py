@@ -26,7 +26,7 @@ def sigterm_handler_wrap(_signo):
 def run():
     try:
         # load config
-        load_config()
+        load_config("zi")
         # ctrl + c
         sigterm_handler_wrap(signal.SIGINT)
         # kill signal
